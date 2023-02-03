@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>IMC (Indice de Masa Corporal)</h1>
+    <p class="info">El Índice de Masa Corporal (IMC) es una medida de asociación entre el peso y la talla de una persona. El IMC es usado como uno de varios indicadores para evaluar el estado nutricional.
+
+    El IMC constituye la medida poblacional más útil del sobrepeso y la obesidad, pues la forma de calcularlo no varía en función del sexo ni de la edad en la población adulta. No obstante, debe considerarse como una guía aproximativa, pues puede no corresponder al mismo grado de gordura en diferentes individuos.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Composicion corporal</th>
+                <th>Indice de masa corporal (IMC)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Peso inferior normal</td>
+                <td>Menos de 18.5</td>
+            </tr>
+            <tr>
+                <td>Normal</td>
+                <td>18.5 - 24.9</td>
+            </tr>
+            <tr>
+                <td>Peso superior al normal</td>
+                <td>25.0 - 29.9</td>
+            </tr>
+            <tr>
+                <td>Obesidad</td>
+                <td>Mas de 30.0</td>
+            </tr>
+        </tbody>
+    </table>
+    <select name="" id="select">
+        <option value="sistema metrico">Sistema metrico</option>
+        <option value="sistema ingles">Sistema ingles</option>
+    </select>
+    <section class="calculadora">
+        <div class="estatura" id="text-estatura">Estatura (m)</div>
+        <input type="text" class="input" id="estatura">
+        <div class="peso" id="text-peso">Peso (kg)</div>
+        <input type="text" class="input" id="peso">
+    </section>
+    <button id="button">CALCULAR</button>
+    <div class="contenedor-resultado">
+        <div>Resultado: </div>
+        <div class="resultado" id="resultado">0</div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+</html>
